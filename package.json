@@ -1,10 +1,11 @@
 {
 	"name": "web",
 	"private": true,
+
 	"type": "module",
 	"scripts": {
 		"dev": "react-router dev",
-		"build": "react-router build",
+		"build": "react-router build --spa",
 		"typecheck": "react-router typegen && tsc --noEmit"
 	},
 	"dependencies": {
@@ -37,6 +38,7 @@
 		"isbot": "^5.1.27",
 		"lodash-es": "^4.17.21",
 		"lucide-react": "0.358.0",
+		"s": null,
 		"motion": "^12.7.4",
 		"papaparse": "^5.5.2",
 		"pdfjs-dist": "3.11.174",
@@ -95,4 +97,4 @@
 	"overrides": {
 		"next-themes": "^0.3.0"
 	}
-}    
+}
