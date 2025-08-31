@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { signIn, signOut } from "@auth/create/react";
+import { signIn, signOut } from "@auth/react";
 
 function useAuth() {
   const callbackUrl = typeof window !== 'undefined' 
