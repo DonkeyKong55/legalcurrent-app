@@ -16,19 +16,16 @@ import {
   useRef,
   useState,
   type ReactNode,
-  type FC,
   Component,
 } from 'react';
 import './global.css';
 
 import fetch from '@/__create/fetch';
-// @ts-ignore
 import { SessionProvider } from "next-auth/react";
 import { useNavigate } from 'react-router';
 import { serializeError } from 'serialize-error';
 import { Toaster } from 'sonner';
-// @ts-ignore
-import { LoadFonts } from 'virtual:load-fonts.jsx';
+// import { LoadFonts } from 'virtual:load-fonts.jsx';
 import { HotReloadIndicator } from '../__create/HotReload';
 import { useSandboxStore } from '../__create/hmr-sandbox-store';
 import type { Route } from './+types/root';
@@ -375,7 +372,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <Links />
         <script type="module" src="/src/__create/dev-error-overlay.js"></script>
         <link rel="icon" href="/src/__create/favicon.png" />
-        <LoadFonts />
+        {/* <LoadFonts /> */}
       </head>
       <body>
         <ClientOnly loader={() => children} />
