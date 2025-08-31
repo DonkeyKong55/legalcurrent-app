@@ -1,7 +1,6 @@
-import type { Config } from '@react-router/dev/config';
+import type { Config } from "@react-router/dev/config";
 
 export default {
-	appDirectory: './src/app',
-	ssr: true,
-	prerender: ['/*?'],
+  ssr: false,    // disable server rendering
+  prerender: false, // disable prerender step
 } satisfies Config;
