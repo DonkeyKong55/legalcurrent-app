@@ -23,7 +23,7 @@ import './global.css';
 
 import fetch from '@/__create/fetch';
 // @ts-ignore
-import { SessionProvider } from '@auth/core/react';
+import { SessionProvider } from "@auth/react";
 import { useNavigate } from 'react-router';
 import { serializeError } from 'serialize-error';
 import { Toaster } from 'sonner';
