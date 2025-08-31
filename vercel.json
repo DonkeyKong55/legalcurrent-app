@@ -1,9 +1,9 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "vite.config.js",
+      "use": "@vercel/static-build"
     }
-  ]
+  ],
+  "outputDirectory": "build/client"
 }
