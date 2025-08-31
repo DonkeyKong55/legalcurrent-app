@@ -8,8 +8,7 @@
     "typecheck": "react-router typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@auth/react": "^1.0.0-beta.2",
-    "@auth/core": "^0.37.2",
+    "next-auth": "^4.24.7",
     "@babel/generator": "^7.27.1",
     "@chakra-ui/react": "2.8.2",
     "@dnd-kit/core": "^6.3.1",
