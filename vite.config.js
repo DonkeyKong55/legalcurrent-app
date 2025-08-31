@@ -4,10 +4,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
+    // The path alias plugin must come BEFORE the reactRouter plugin
+    tsconfigPaths(),
     reactRouter({
-      // This is the correct way to disable the broken server-side step
       prerender: false,
     }),
-    tsconfigPaths(),
   ],
 });
