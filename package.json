@@ -37,7 +37,6 @@
     "lodash-es": "^4.17.21",
     "lucide-react": "0.358.0",
     "motion": "^12.7.4",
-    "next-auth": "^5.0.0-beta.22",
     "papaparse": "^5.5.2",
     "pdfjs-dist": "3.11.174",
     "react": "^18.2.0",
